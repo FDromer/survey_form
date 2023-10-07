@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;1,400;1,700&display=swap');
+
+:root {
+  --color-black-russian: #0c0c30;
+  --color-green: #37af65;
+  --color-whitesmoke: #f3f3f3;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(https://source.unsplash.com/Fa9b57hffnM);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  font-family: 'Noto Serif', serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.4;
+  opacity: 0.8;
+}
+
+#title {
+  margin-top: 3rem;
+}
+
+#description {
+  margin-bottom: 2rem;
+}
+#title,
+#description {
+  text-align: center;
+  line-height: 1.8;
+}
+
+#survey-form {
+  width: 100%;
+  margin: 0 auto 3.125rem auto;
+  border-radius: 0.3125rem;
+  background-color: var(--color-black-russian);
+}
+
+fieldset {
+  padding: 0 2.625rem;
+  border: none; 
+}
+
+label {
+  display: block;
+  align-items: center;
+  font-size: 1.25rem;
+  color: var(--color-whitesmoke);
+}
+
+.first-label-item {
+  margin-top: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+textarea,
+select,
+.first-label-inline {
+  border: none;
+  padding: 0.875rem;
+  width: 100%;
+}
+
+select,
+.first-label-inline {
+  border-radius: 0.3125rem;
+}
+
+.second-label-select-item {
+  margin-top: 2.625rem;
+}
+
+select,
+.texto {
+  margin-top: 0.5rem;
+}
+
+.four-field-p,
+.third-field-p {
+  margin-top: 2.625rem;
+  margin-bottom: 1rem;
+  font-size: 1.25rem;
+  color: var(--color-whitesmoke);
+}
+
+.four-label-checkbox,
+.third-label-radio {
+  display: inline-block;
+  margin-right: 0.625rem;
+  margin-bottom: 0.625rem;
+  min-width: 1.25rem;
+  min-height: 1.25rem;
+} 
+
+.area {
+  margin-top: 2.625rem;
+}  
+
+.submit-btn {
+  background-color: var(--color-green);
+  border: none;
+  border-radius: 0.3125rem;
+  color: var(--color-whitesmoke);
+  cursor: pointer;
+  display: inline-block;
+  font-size: 1.125rem;
+  font-weight: 400;
+  margin-bottom: 3rem;
+  margin-top: 2rem;
+  padding: 0.875rem;
+  text-align: center;
+  width: 100%;
+}
+
+
+/* MEDIA QUERIES */
+@media (min-width: 475px) {
+  form {
+    max-width: 420px;
+  }
+}
+
+@media (min-width: 576px) {
+  form {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  #survey-form{
+    max-width: 720px;
+  }
+}
+
+
+

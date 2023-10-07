@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css">
+    <title>Survey Form</title>
+  </head>
+  <body>
+    
+    <h1 id="title">freeCodeCamp Data Survey Form</h1>
+    <p id="description">Thank you to take a time to help me improve this Data Survey Form</p>
+
+    <form method="post" action="https://register-demo.freecodecamp.org" id="survey-form">
+      <fieldset>
+        <label id="name-label" for="name" class="first-label-item">Name</label>
+        <input id="name" type="text" name="first-name" placeholder="Enter your name" class="first-label-inline" required />
+        
+        <label id="surname-label" for="surname" class="first-label-item">Surname</label>
+        <input id="surname" type="text" name="last-name" placeholder="Enter your Surname" class="first-label-inline" required />
+        
+        <label id="email-label" for="email" class="first-label-item">Email</label>
+        <input id="email" type="email" name="email" placeholder="Enter your Email" class="first-label-inline" required />
+        
+        <label id="number-label" for="number" class="first-label-item">Age</label>
+        <input id="number" type="number" name="age" min="13" max="99" placeholder="Age" class="first-label-inline" />
+      </fieldset>
+    
+      <fieldset>
+      <label for="dropdown" class="second-label-select-item">Select an option between
+        <select id="dropdown" name="dropdown">
+          <option value="">(select one)</option>
+          <option value="1">Newbie</option>
+          <option value="2">Student</option>
+          <option value="3">Full Time Job</option>
+          <option value="5">Full Time Learner</option>
+          <option value="6">Prefer not to say</option>
+          <option value="other">other</option>
+        </select>
+      </label> 
+      </fieldset>
+    
+      <fieldset>
+        <p class="third-field-p">Would make a choose</p>
+        
+        <label><input value="first-choose" type="radio" name="user-choose" class="third-label-radio" checked />First choose</label>
+      
+        <label><input value="second-choose" type="radio" name="user-choose" class="third-label-radio" checked />Second choose</label>
+      
+        <label><input value="third-choose" type="radio" name="user-choose" class="third-label-radio" checked />Third choose</label>
+      </fieldset>
+     
+      <fieldset>
+        <p class="four-field-p">What would like to improve?(check all that apply)</p>
+        <label><input value="linux" type="checkbox" name="prefer-choose" class="four-label-checkbox" />Linux</label>
+      
+        <label ><input value="ethical-hacking" type="checkbox" name="prefer-choose" class="four-label-checkbox" />Ethical Hacking</label>
+      
+        <label ><input value="networking" type="checkbox" name="prefer-choose" class="four-label-checkbox" />Networking</label>
+      
+        <label><input value="programming" type="checkbox" name="prefer-choose" class="four-label-checkbox" />Programming</label>
+      
+        <label><input value="database" type="checkbox" name="prefer-choose" class="four-label-checkbox" />Database</label>
+      
+        <label><input value="data-analysis" type="checkbox" name="prefer-choose" class="four-label-checkbox" />Data Analysis</label>
+      
+        <label><input value="cybersecurity" type="checkbox" name="prefer-choose" class="four-label-checkbox" />Cybersecurity</label>
+      
+        <label><input value="front-end" type="checkbox" name="prefer-choose" class="four-label-checkbox" />Front End</label>
+      
+        <label><input value="back-end" type="checkbox" name="prefer-choose" class="four-label-checkbox" />Back End</label>
+      
+        <label><input value="full-stack" type="checkbox" name="prefer-choose" class="four-label-checkbox" />Full Stack</label>
+
+        <label for="comment" class="area">Any comments or suggestions?
+          <textarea id="comment" rows="8" cols="40" placeholder="Enter your comment here.." class="texto"></textarea>
+        </label>
+        <button id="submit" type="submit" class="submit-btn">Submit</button>
+      </fieldset>
+
+   </form>
+
+  </body>
+</html>
